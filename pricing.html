@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="FlowBot pricing — plans from $29/mo with a 14-day free trial.">
+    <title>Pricing — FlowBot</title>
+    <link rel="icon" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <video class="video-bg" src="video.mp4" autoplay loop muted playsinline></video>
+    <main class="page">
+      <div class="nav-wrap">
+        <nav class="site-nav container" aria-label="Primary">
+          <a class="menu-brand" href="index.html">
+            <img src="assets/logo.svg" alt="FlowBot">
+          </a>
+          <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="menu-links">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="how-it-works.html">How it works</a>
+            <a href="pricing.html" class="active">Pricing</a>
+            <a href="customers.html">Customers</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <a class="menu-cta" href="pricing.html">Start free trial</a>
+        </nav>
+      </div>
+
+      <header class="page-hero container">
+        <p class="eyebrow">Pricing</p>
+        <h1>Simple plans that scale with you</h1>
+        <p class="lead">Start free for 14 days. No credit card required. Upgrade when you're ready.</p>
+      </header>
+
+      <section style="padding-top: 0;">
+        <div class="container">
+          <div class="pricing-grid">
+            <article class="price-card">
+              <h3>Starter</h3>
+              <p class="desc">For solo founders and small teams getting started.</p>
+              <div class="price-amount">$29<small>/mo</small></div>
+              <ul class="price-features">
+                <li>1 chatbot</li>
+                <li>2,000 messages/mo</li>
+                <li>Website widget</li>
+                <li>Email support</li>
+              </ul>
+              <a class="button secondary" href="contact.html">Start trial</a>
+            </article>
+            <article class="price-card highlight">
+              <span class="price-badge">Most popular</span>
+              <h3>Pro</h3>
+              <p class="desc">For growing teams that need scale and integrations.</p>
+              <div class="price-amount">$79<small>/mo</small></div>
+              <ul class="price-features">
+                <li>5 chatbots</li>
+                <li>25,000 messages/mo</li>
+                <li>Slack + API access</li>
+                <li>Priority support</li>
+              </ul>
+              <a class="button primary" href="contact.html">Start trial</a>
+            </article>
+            <article class="price-card">
+              <h3>Enterprise</h3>
+              <p class="desc">For large orgs with security and SLA requirements.</p>
+              <div class="price-amount">Custom</div>
+              <ul class="price-features">
+                <li>Unlimited bots</li>
+                <li>Custom volume</li>
+                <li>SSO &amp; audit logs</li>
+                <li>Dedicated success manager</li>
+              </ul>
+              <a class="button secondary" href="contact.html">Contact sales</a>
+            </article>
+          </div>
+
+          <div class="faq-list">
+            <article class="faq-item">
+              <h3>Is there a free trial?</h3>
+              <p>Yes — every plan includes a 14-day free trial with full access. No credit card required to start.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Can I change plans later?</h3>
+              <p>Absolutely. Upgrade or downgrade anytime from your dashboard. Changes take effect on your next billing cycle.</p>
+            </article>
+            <article class="faq-item">
+              <h3>What happens if I exceed my message limit?</h3>
+              <p>We'll notify you before you hit the cap. You can upgrade your plan or purchase additional message packs.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band container">
+        <h2>Not sure which plan fits?</h2>
+        <p>Our team can help you pick the right setup for your volume and use case.</p>
+        <div class="actions">
+          <a class="button primary large" href="contact.html">Talk to sales</a>
+        </div>
+      </section>
+
+      <footer class="footer container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="assets/logo.svg" alt="FlowBot">
+            <p>AI chatbot platform for modern teams.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="how-it-works.html">How it works</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="customers.html">Customers</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="contact.html">Privacy</a>
+            <a href="contact.html">Terms</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 FlowBot. All rights reserved.</span>
+        </div>
+      </footer>
+    </main>
+
+    <button class="chat-launcher" type="button" id="chat-launcher" aria-label="Open chat">💬</button>
+    <aside class="chat-widget" id="chat-widget" aria-label="FlowBot demo chat">
+      <div class="chat-header">
+        <div class="chat-header-mark" aria-hidden="true"></div>
+        <div><strong>FlowBot</strong><span>Online · replies instantly</span></div>
+        <button class="chat-close" type="button" id="chat-close" aria-label="Close chat">×</button>
+      </div>
+      <div class="chat-body" id="chat-body">
+        <div class="msg bot">Hi! Ask me about pricing or which plan is right for you.</div>
+      </div>
+      <form class="chat-input-row" id="chat-form">
+        <input type="text" placeholder="Type a message…" autocomplete="off" aria-label="Message">
+        <button type="submit" aria-label="Send">→</button>
+      </form>
+    </aside>
+    <script src="js/main.js"></script>
+  </body>
+</html>

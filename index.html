@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="FlowBot — AI chatbot SaaS for support, sales, and onboarding.">
+    <title>FlowBot — AI Chatbot for Your Business</title>
+    <link rel="icon" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <video class="video-bg" src="video.mp4" autoplay loop muted playsinline></video>
+    <main class="page">
+      <div class="nav-wrap">
+        <nav class="site-nav container" aria-label="Primary">
+          <a class="menu-brand" href="index.html">
+            <img src="assets/logo.svg" alt="FlowBot">
+          </a>
+          <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="menu-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="features.html">Features</a>
+            <a href="how-it-works.html">How it works</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="customers.html">Customers</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <a class="menu-cta" href="pricing.html">Start free trial</a>
+        </nav>
+      </div>
+
+      <section class="hero container">
+        <div>
+          <p class="eyebrow">AI chatbot SaaS</p>
+          <h1>The AI chatbot that turns visitors into customers</h1>
+          <p class="lead">Deploy a smart assistant in minutes. Train it on your docs, connect it to your site, and let it handle support, sales, and onboarding around the clock.</p>
+          <div class="actions">
+            <a class="button primary large" href="pricing.html">Start free trial</a>
+            <button class="button secondary large" type="button" id="demo-btn">Try live demo</button>
+          </div>
+          <div class="trust-row">
+            <span>Trusted by teams at</span>
+            <div class="trust-logos" aria-hidden="true">
+              <span>NOVA</span>
+              <span>PIXEL</span>
+              <span>ORBIT</span>
+              <span>ZENITH</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-stage">
+          <img class="hero-art" src="assets/illustrations/hero-chatbot.svg" alt="FlowBot chat interface">
+        </div>
+      </section>
+
+      <div class="stats-band">
+        <div class="stats container">
+          <div class="stat"><strong>10M+</strong><span>Messages handled</span></div>
+          <div class="stat"><strong>99.9%</strong><span>Uptime SLA</span></div>
+          <div class="stat"><strong>3×</strong><span>Faster resolution</span></div>
+        </div>
+      </div>
+
+      <section>
+        <div class="container">
+          <header class="section-head">
+            <p class="section-label">Explore</p>
+            <h2>Everything you need in one platform</h2>
+            <p>Dive deeper into what FlowBot can do for your team.</p>
+          </header>
+          <div class="preview-cards">
+            <a class="preview-card" href="features.html">
+              <h3>Features →</h3>
+              <p>Train on docs, deploy anywhere, and track conversions with built-in analytics.</p>
+            </a>
+            <a class="preview-card" href="how-it-works.html">
+              <h3>How it works →</h3>
+              <p>Go from signup to live chatbot in three simple steps — under 15 minutes.</p>
+            </a>
+            <a class="preview-card" href="pricing.html">
+              <h3>Pricing →</h3>
+              <p>Plans from $29/mo. Start with a 14-day free trial, no credit card required.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band container">
+        <h2>Ready to put your support on autopilot?</h2>
+        <p>Join thousands of teams using FlowBot to answer faster, convert more, and scale without hiring.</p>
+        <div class="actions">
+          <a class="button primary large" href="pricing.html">Start free trial</a>
+          <a class="button secondary large" href="contact.html">Talk to sales</a>
+        </div>
+      </section>
+
+      <footer class="footer container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="assets/logo.svg" alt="FlowBot">
+            <p>AI chatbot platform for modern teams. Automate support, capture leads, and delight customers 24/7.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="how-it-works.html">How it works</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="customers.html">Customers</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="contact.html">Privacy</a>
+            <a href="contact.html">Terms</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 FlowBot. All rights reserved.</span>
+        </div>
+      </footer>
+    </main>
+
+    <button class="chat-launcher" type="button" id="chat-launcher" aria-label="Open chat">💬</button>
+    <aside class="chat-widget" id="chat-widget" aria-label="FlowBot demo chat">
+      <div class="chat-header">
+        <div class="chat-header-mark" aria-hidden="true"></div>
+        <div>
+          <strong>FlowBot</strong>
+          <span>Online · replies instantly</span>
+        </div>
+        <button class="chat-close" type="button" id="chat-close" aria-label="Close chat">×</button>
+      </div>
+      <div class="chat-body" id="chat-body">
+        <div class="msg bot">Hi! I'm FlowBot 👋 Ask me about pricing, setup, or features.</div>
+      </div>
+      <form class="chat-input-row" id="chat-form">
+        <input type="text" placeholder="Type a message…" autocomplete="off" aria-label="Message">
+        <button type="submit" aria-label="Send">→</button>
+      </form>
+    </aside>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<svg width="1120" height="154" viewBox="0 0 1120 154" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Liquid UI menu bar asset</title>
+  <desc id="desc">A glassmorphism navigation bar with liquid gradient logo, pill menu items, and a glossy call to action.</desc>
+  <defs>
+    <linearGradient id="liquid" x1="42" y1="39" x2="102" y2="101" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.22" stop-color="#67E8F9"/>
+      <stop offset="0.58" stop-color="#00A6A6"/>
+      <stop offset="1" stop-color="#8B7CF6"/>
+    </linearGradient>
+    <linearGradient id="cta" x1="884" y1="49" x2="1041" y2="106" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#006F8A"/>
+      <stop offset="1" stop-color="#00A6A6"/>
+    </linearGradient>
+    <filter id="barShadow" x="8" y="15" width="1104" height="124" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="26" stdDeviation="26" flood-color="#006F8A" flood-opacity="0.16"/>
+    </filter>
+    <filter id="blobBlur" x="0" y="0" width="1120" height="154" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+  <rect width="1120" height="154" fill="#F7FBFF"/>
+  <g filter="url(#blobBlur)" opacity="0.56">
+    <path d="M28 74C48 28 120 28 143 70C166 112 108 146 61 130C29 119 16 100 28 74Z" fill="#67E8F9"/>
+    <path d="M884 34C940 3 1032 35 1042 88C1052 140 944 149 895 122C854 100 845 56 884 34Z" fill="#B8F56F"/>
+  </g>
+  <g filter="url(#barShadow)">
+    <rect x="40" y="34" width="1040" height="82" rx="32" fill="white" fill-opacity="0.68" stroke="white" stroke-width="2"/>
+    <path d="M76.9 83.9C70.8 65.1 86.8 44.7 107.2 46.1C127.6 47.5 143.6 69.7 133 88.2C122.8 106.1 95.9 113.7 82.9 99.6C78.9 95.2 78.7 89.1 76.9 83.9Z" fill="url(#liquid)"/>
+    <path d="M91.2 70.8C90 63.4 95.8 56.1 103.4 55.5C113.2 54.7 116.6 63.1 111 69.8C106.1 75.5 92.6 78.8 91.2 70.8Z" fill="white" fill-opacity="0.78"/>
+    <text x="154" y="84" fill="#061826" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">LiquidFlow</text>
+    <rect x="374" y="53" width="92" height="44" rx="22" fill="#061826" fill-opacity="0.06"/>
+    <text x="398" y="82" fill="#061826" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">Home</text>
+    <text x="502" y="82" fill="#557081" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">Assets</text>
+    <text x="606" y="82" fill="#557081" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">Pricing</text>
+    <text x="716" y="82" fill="#557081" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">Docs</text>
+    <rect x="874" y="49" width="164" height="52" rx="26" fill="url(#cta)"/>
+    <text x="913" y="82" fill="white" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">Get assets</text>
+    <circle cx="1022" cy="61" r="5" fill="white" fill-opacity="0.82"/>
+  </g>
+</svg>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="How FlowBot works — go live in three steps in under 15 minutes.">
+    <title>How it works — FlowBot</title>
+    <link rel="icon" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <video class="video-bg" src="video.mp4" autoplay loop muted playsinline></video>
+    <main class="page">
+      <div class="nav-wrap">
+        <nav class="site-nav container" aria-label="Primary">
+          <a class="menu-brand" href="index.html">
+            <img src="assets/logo.svg" alt="FlowBot">
+          </a>
+          <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="menu-links">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="how-it-works.html" class="active">How it works</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="customers.html">Customers</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <a class="menu-cta" href="pricing.html">Start free trial</a>
+        </nav>
+      </div>
+
+      <header class="page-hero container">
+        <p class="eyebrow">How it works</p>
+        <h1>Live in three steps</h1>
+        <p class="lead">No engineers required. Most teams go from signup to first conversation in under 15 minutes.</p>
+      </header>
+
+      <section style="padding-top: 0;">
+        <div class="container">
+          <div class="steps">
+            <article class="step">
+              <h3>Connect your content</h3>
+              <p>Import help docs, Notion pages, or paste URLs. FlowBot indexes everything and stays in sync automatically.</p>
+            </article>
+            <article class="step">
+              <h3>Customize your bot</h3>
+              <p>Set tone, fallback rules, and handoff triggers. Add your brand colors and welcome message in a few clicks.</p>
+            </article>
+            <article class="step">
+              <h3>Embed &amp; go live</h3>
+              <p>Copy one line of code into your site. Your chatbot starts answering questions and capturing leads instantly.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <header class="section-head">
+            <p class="section-label">Integrations</p>
+            <h2>Works with the tools you already use</h2>
+          </header>
+          <div class="features">
+            <article class="feature">
+              <div class="feature-icon" aria-hidden="true">📝</div>
+              <h3>Notion &amp; Docs</h3>
+              <p>Sync knowledge bases automatically. Updates propagate to your bot within minutes.</p>
+            </article>
+            <article class="feature">
+              <div class="feature-icon" aria-hidden="true">💬</div>
+              <h3>Slack</h3>
+              <p>Let your team monitor conversations and jump in when a human touch is needed.</p>
+            </article>
+            <article class="feature">
+              <div class="feature-icon" aria-hidden="true">🔗</div>
+              <h3>REST API</h3>
+              <p>Build custom workflows, trigger actions, and connect FlowBot to your existing stack.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band container">
+        <h2>Ready to get started?</h2>
+        <p>Pick a plan and launch your first chatbot today.</p>
+        <div class="actions">
+          <a class="button primary large" href="pricing.html">View pricing</a>
+          <button class="button secondary large" type="button" id="demo-btn">Try live demo</button>
+        </div>
+      </section>
+
+      <footer class="footer container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="assets/logo.svg" alt="FlowBot">
+            <p>AI chatbot platform for modern teams.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="how-it-works.html">How it works</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="customers.html">Customers</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="contact.html">Privacy</a>
+            <a href="contact.html">Terms</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 FlowBot. All rights reserved.</span>
+        </div>
+      </footer>
+    </main>
+
+    <button class="chat-launcher" type="button" id="chat-launcher" aria-label="Open chat">💬</button>
+    <aside class="chat-widget" id="chat-widget" aria-label="FlowBot demo chat">
+      <div class="chat-header">
+        <div class="chat-header-mark" aria-hidden="true"></div>
+        <div><strong>FlowBot</strong><span>Online · replies instantly</span></div>
+        <button class="chat-close" type="button" id="chat-close" aria-label="Close chat">×</button>
+      </div>
+      <div class="chat-body" id="chat-body">
+        <div class="msg bot">Hi! Ask me how setup works — it only takes 15 minutes.</div>
+      </div>
+      <form class="chat-input-row" id="chat-form">
+        <input type="text" placeholder="Type a message…" autocomplete="off" aria-label="Message">
+        <button type="submit" aria-label="Send">→</button>
+      </form>
+    </aside>
+    <script src="js/main.js"></script>
+  </body>
+</html>

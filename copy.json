@@ -1,0 +1,50 @@
+{
+  "brand": "FlowBot",
+  "headline": "The AI chatbot that turns visitors into customers",
+  "subheadline": "Deploy a smart assistant in minutes. Train it on your docs, connect it to your site, and let it handle support, sales, and onboarding around the clock.",
+  "primaryCta": "Start free trial",
+  "secondaryCta": "Watch demo",
+  "features": [
+    {
+      "title": "Train on your knowledge",
+      "body": "Upload docs, FAQs, and product pages. FlowBot learns your tone and answers with context — not generic scripts."
+    },
+    {
+      "title": "Deploy anywhere",
+      "body": "Embed on your site, connect Slack, or use our API. One bot, every channel your customers already use."
+    },
+    {
+      "title": "Insights that convert",
+      "body": "See what people ask, where they drop off, and which conversations lead to sign-ups — all in one dashboard."
+    }
+  ],
+  "stats": [
+    { "label": "Messages handled", "value": "10M+" },
+    { "label": "Uptime SLA", "value": "99.9%" },
+    { "label": "Faster resolution", "value": "3×" }
+  ],
+  "pricing": [
+    {
+      "name": "Starter",
+      "price": "$29",
+      "period": "/mo",
+      "description": "For solo founders and small teams getting started.",
+      "features": ["1 chatbot", "2,000 messages/mo", "Website widget", "Email support"]
+    },
+    {
+      "name": "Pro",
+      "price": "$79",
+      "period": "/mo",
+      "description": "For growing teams that need scale and integrations.",
+      "features": ["5 chatbots", "25,000 messages/mo", "Slack + API access", "Priority support"],
+      "highlighted": true
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "description": "For large orgs with security and SLA requirements.",
+      "features": ["Unlimited bots", "Custom volume", "SSO & audit logs", "Dedicated success manager"]
+    }
+  ]
+}

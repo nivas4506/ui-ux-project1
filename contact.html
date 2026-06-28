@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact FlowBot — sales, support, and demo requests.">
+    <title>Contact — FlowBot</title>
+    <link rel="icon" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <video class="video-bg" src="video.mp4" autoplay loop muted playsinline></video>
+    <main class="page">
+      <div class="nav-wrap">
+        <nav class="site-nav container" aria-label="Primary">
+          <a class="menu-brand" href="index.html">
+            <img src="assets/logo.svg" alt="FlowBot">
+          </a>
+          <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="menu-links">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="how-it-works.html">How it works</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="customers.html">Customers</a>
+            <a href="contact.html" class="active">Contact</a>
+          </div>
+          <a class="menu-cta" href="pricing.html">Start free trial</a>
+        </nav>
+      </div>
+
+      <header class="page-hero container">
+        <p class="eyebrow">Contact</p>
+        <h1>Let's talk</h1>
+        <p class="lead">Questions about pricing, enterprise plans, or a custom demo? We're here to help.</p>
+      </header>
+
+      <section style="padding-top: 0;">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3>Get in touch</h3>
+              <p>Fill out the form and our team will respond within one business day. For urgent support, email us directly.</p>
+              <div class="contact-detail">
+                <span aria-hidden="true">✉</span>
+                <span>hello@flowbot.io</span>
+              </div>
+              <div class="contact-detail">
+                <span aria-hidden="true">💬</span>
+                <span>Live chat — bottom right</span>
+              </div>
+              <div class="contact-detail">
+                <span aria-hidden="true">📍</span>
+                <span>San Francisco, CA</span>
+              </div>
+            </div>
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" required placeholder="Jane Smith">
+              </div>
+              <div class="form-group">
+                <label for="email">Work email</label>
+                <input type="email" id="email" name="email" required placeholder="jane@company.com">
+              </div>
+              <div class="form-group">
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic">
+                  <option value="sales">Sales &amp; demo</option>
+                  <option value="enterprise">Enterprise plan</option>
+                  <option value="support">Support</option>
+                  <option value="partnership">Partnership</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Tell us about your use case…"></textarea>
+              </div>
+              <button class="button primary large" type="submit" style="width: 100%;">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band container">
+        <h2>Prefer to dive in yourself?</h2>
+        <p>Start a free 14-day trial — no credit card, no sales call required.</p>
+        <div class="actions">
+          <a class="button primary large" href="pricing.html">Start free trial</a>
+        </div>
+      </section>
+
+      <footer class="footer container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="assets/logo.svg" alt="FlowBot">
+            <p>AI chatbot platform for modern teams.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="how-it-works.html">How it works</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="customers.html">Customers</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="contact.html">Privacy</a>
+            <a href="contact.html">Terms</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 FlowBot. All rights reserved.</span>
+        </div>
+      </footer>
+    </main>
+
+    <button class="chat-launcher" type="button" id="chat-launcher" aria-label="Open chat">💬</button>
+    <aside class="chat-widget" id="chat-widget" aria-label="FlowBot demo chat">
+      <div class="chat-header">
+        <div class="chat-header-mark" aria-hidden="true"></div>
+        <div><strong>FlowBot</strong><span>Online · replies instantly</span></div>
+        <button class="chat-close" type="button" id="chat-close" aria-label="Close chat">×</button>
+      </div>
+      <div class="chat-body" id="chat-body">
+        <div class="msg bot">Hi! Need help? Ask here or use the contact form above.</div>
+      </div>
+      <form class="chat-input-row" id="chat-form">
+        <input type="text" placeholder="Type a message…" autocomplete="off" aria-label="Message">
+        <button type="submit" aria-label="Send">→</button>
+      </form>
+    </aside>
+    <script src="js/main.js"></script>
+  </body>
+</html>
