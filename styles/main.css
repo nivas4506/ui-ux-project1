@@ -23,10 +23,10 @@ body::after {
 
 .video-bg {
   position: fixed;
-  top: -10vh;
-  left: -10vw;
-  width: 120vw;
-  height: 120vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   z-index: -2;
@@ -113,28 +113,7 @@ body::after {
 
 .menu-brand img { height: 36px; width: auto; }
 
-.menu-links {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.menu-links a {
-  min-height: 40px;
-  padding: 10px 14px;
-  border-radius: 999px;
-  color: var(--color-muted);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 14px;
-  transition: color 0.15s, background 0.15s;
-}
-
-.menu-links a:hover,
-.menu-links a.active {
-  color: var(--color-blue);
-  background: rgba(2, 31, 187, 0.06);
-}
+/* .menu-links styling replaced by GooeyNav */
 
 .menu-cta {
   min-height: 44px;
@@ -450,9 +429,10 @@ section { padding: 78px 0; }
 }
 
 .price-card.highlight {
-  border-color: var(--color-blue);
-  background: var(--color-white);
-  box-shadow: 0 24px 64px rgba(2, 31, 187, 0.14);
+  border-color: var(--color-cyan);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 0 32px rgba(6, 182, 212, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.2);
   transform: scale(1.02);
 }
 
@@ -481,7 +461,7 @@ section { padding: 78px 0; }
   font-size: 48px;
   font-weight: 900;
   line-height: 1;
-  color: var(--color-black);
+  color: var(--color-white);
 }
 
 .price-amount small {

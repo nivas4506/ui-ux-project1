@@ -8,27 +8,42 @@
     <link rel="icon" href="assets/favicon.svg">
     <link rel="stylesheet" href="styles/tokens.css">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <video class="video-bg" src="video.mp4" autoplay loop muted playsinline></video>
     <main class="page">
-      <div class="nav-wrap">
-        <nav class="site-nav container" aria-label="Primary">
-          <a class="menu-brand" href="index.html">
-            <img src="assets/logo.svg" alt="FlowBot">
-          </a>
-          <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-          </button>
-          <div class="menu-links">
-            <a href="index.html" class="active">Home</a>
-            <a href="features.html">Features</a>
-            <a href="how-it-works.html">How it works</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="customers.html">Customers</a>
-            <a href="contact.html">Contact</a>
+                        <div class="nav-wrap flex justify-center w-full px-4 pt-6 pb-2 relative z-50">
+        <nav class="flex items-center justify-between w-full max-w-[1152px] p-2 bg-white/5 backdrop-blur-md rounded-full shadow-[0_8px_32px_rgba(0,0,0,0.3),inset_0_1px_2px_rgba(255,255,255,0.4),inset_0_-1px_2px_rgba(255,255,255,0.1)] border border-white/20" aria-label="Primary">
+          
+          <!-- Left: Logo -->
+          <div class="flex-1 flex items-center justify-start pl-1">
+            <a class="flex items-center gap-3 text-white font-extrabold text-lg tracking-tight" href="index.html">
+              <div class="w-8 h-8 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg flex items-center justify-center text-white shadow-inner">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01"></path></svg>
+              </div>
+              LiguidFI
+            </a>
           </div>
-          <a class="menu-cta" href="pricing.html">Start free trial</a>
+
+          <!-- Center: Links -->
+          <div class="hidden md:flex items-center justify-center gap-6 shrink-0">
+             <a href="index.html" class="text-white/90 hover:text-white font-semibold text-[13px] tracking-wide transition-colors drop-shadow-md" style="text-shadow: none;">Home</a>
+             <a href="features.html" class="text-white/90 hover:text-white font-semibold text-[13px] tracking-wide transition-colors drop-shadow-md" style="text-shadow: none;">Features</a>
+             <a href="how-it-works.html" class="text-white/90 hover:text-white font-semibold text-[13px] tracking-wide transition-colors drop-shadow-md" style="text-shadow: none;">How it works</a>
+             <a href="pricing.html" class="text-white/90 hover:text-white font-semibold text-[13px] tracking-wide transition-colors drop-shadow-md" style="text-shadow: none;">Pricing</a>
+             <a href="customers.html" class="text-white/90 hover:text-white font-semibold text-[13px] tracking-wide transition-colors drop-shadow-md" style="text-shadow: none;">Customers</a>
+             <a href="contact.html" class="text-white/90 hover:text-white font-semibold text-[13px] tracking-wide transition-colors drop-shadow-md" style="text-shadow: none;">Contact</a>
+          </div>
+
+          <!-- Right: CTA Button -->
+          <div class="flex-1 flex items-center justify-end pr-1">
+            <button class="menu-toggle md:hidden p-2 text-white" type="button" aria-label="Toggle menu">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <a href="pricing.html" class="hidden md:inline-block bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/40 text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-[0_4px_10px_rgba(0,0,0,0.2)] transition-colors" style="text-shadow: none;">Start free trial</a>
+          </div>
+
         </nav>
       </div>
 
